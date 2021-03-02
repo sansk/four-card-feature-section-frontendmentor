@@ -4,7 +4,7 @@
 
 View the Completed Page here.
 
-![Completed Design preview for the Four Card feature Section coding challenge](./design/completed_preview.png)
+![Completed Design preview for the Four Card feature Section coding challenge](./design/completed.png)
 
 ## Used
 
