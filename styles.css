@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --darkblue: hsl(234, 12%, 34%);
+  --grayishblue: hsl(229, 6%, 66%);
+  --lightgray: hsl(0, 0%, 98%);
+
+  --fontsize: 15px;
+  --fontfamily: 'Poppins', sans-serif;
+  --bold: 600;
+  --normal: 400;
+  --light: 200;
+}
+
+html {
+  font-size: var(--fontsize);
+  font-family: var(--fontfamily);
+  font-weight: var(--normal);
+}
+
+p {
+  color: var(--grayishblue);
+}
+
+h2,
+h3,
+h4 {
+  color: var(--darkblue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container main {
+  width: 80%;
+  text-align: center;
+}
+main div.top-content {
+  padding: 2rem;
+}
+
+main .top-content h2 {
+  font-weight: var(--light);
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+main .top-content h3 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+main .top-content p {
+  width: 60%;
+  margin: auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.card-container .card {
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px var(--grayishblue);
+  padding: 2rem;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container .card h4 {
+  font-size: 1.25rem;
+  line-height: 3rem;
+}
+
+.card-container .card p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.card-container .card img {
+  width: 20%;
+  align-self: flex-end;
+  margin-top: 2rem;
+}
+
+.card-container .card.one {
+  border-top: 5px solid var(--cyan);
+}
+
+.card-container .card.two {
+  border-top: 5px solid var(--red);
+}
+
+.card-container .card.three {
+  border-top: 5px solid var(--orange);
+}
+
+.card-container .card.four {
+  border-top: 5px solid var(--blue);
+}
+
+.card-container .col2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* To be deleted */
+/* main {
+  background-color: lightgray;
+} */
+
+/* .col1-3 {
+  background-color: tomato;
+} */
+/* 
+.col2 {
+  background-color: lightblue;
+} */
+
+footer {
+  /* margin: 2rem; */
+  padding: 2.5rem;
+}
+
+@media all and (max-width: 990px) {
+  .container main {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .container main {
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 640px) {
+  main .top-content h2 {
+    font-size: 1.5rem;
+  }
+
+  main .top-content h3 {
+    font-size: 1.5rem;
+  }
+
+  main .top-content p {
+    width: 70%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 70%;
+    gap: 2rem;
+  }
+}
+
+@media all and (max-width: 420px) {
+  main .top-content h2 {
+    font-size: 1.25rem;
+  }
+
+  main .top-content h3 {
+    font-size: 1.25rem;
+  }
+
+  main .top-content p {
+    width: 80%;
+  }
+
+  .card-container {
+    grid-template-columns: 85%;
+  }
+}
